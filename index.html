@@ -7,45 +7,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="shortcut icon" href="./assets/media/images/logo.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet">
   <!-- Styles -->
-  <link rel="stylesheet" href="./assets/media/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Scripts -->
+  <script src="./assets/js/app.js" defer></script>
   <!-- Title -->
-  <title>Coding Club | PIEMR</title>
+  <title>Coding Club | Prestige Institute Of Engineering Management and Research, Indore</title>
 </head>
 
 <body>
-  <div id="flex">
-    <header>
+  <div class="main-container" id="blur">
+    <header id="top">
       <nav class="nav-bar">
         <div id="logo">
-          <!-- logo here -->
+          <a href="./index.html"><img src="./assets/media/images/logo.png" alt="Coding Club"></a>
         </div>
         <div id="links">
-          <!-- links here -->
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" onclick="toggle()">Register</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </div>
       </nav>
     </header>
     <main id="hero-section">
-      <div class="box">
-        <!-- Text here -->
+      <div class="box" id="text">
+        <h1 class="primary-heading">Let's Join <span class="primary">Coding Club!</span> </h1> <br>
+        <p class="primary-para">
+          Prestige Institute Of Engineering Management and Research, Indore is Organizing Coding Club for all Coding and
+          Programming lovers!
+        </p>
       </div>
-      <div class="box">
-        <!-- svg here -->
+      <div class="box" id="hero-image">
+        <img src="./assets/media/svg/Open Source.svg" alt="Main Images">
       </div>
     </main>
     <section id="association">
-      <!-- Brands -->
+      <h2 class="secondary-heading">Our<span class="primary">&nbsp;Associations</span></h2>
+      <div id="association-main">
+        <div class="container">
+          <img src="./assets/media/images/FB.png" alt="Facebook" class="association-img">
+          <h3>Facebook</h3>
+        </div>
+        <div class="container">
+          <img src="./assets/media/svg/Google.svg" alt="Some image" class="association-img">
+          <h3>Google</h3>
+        </div>
+        <div class="container">
+          <img src="./assets/media/images/Insta.png" alt="Instagram" class="association-img">
+          <h3>Instagram</h3>
+        </div>
+      </div>
     </section>
     <section id="events">
-      <!-- events here -->
+      <h2 class="secondary-heading">Upcoming<span class="primary">&nbsp;Events</span></h2>
+      <div id="list-event">
+
+      </div>
     </section>
     <section id="winners">
-      <!-- winner here -->
+      <h2 class="secondary-heading">Event<span class="primary">&nbsp;Winners!</span></h2>
+      <div id="winners-list">
+
+      </div>
     </section>
-    <section id="footer">
-      <!-- footer here -->
+    <section class="footer" id="contact">
+      <div class="hr-img footer-div">
+        <hr class="footer-hr">
+        <img src="./assets/media/images/800.gif" alt="Going to follow...">
+      </div>
+      <div class="img">
+        <img src="./assets/media/images/logo.png" alt="Coding Club" class="img">
+      </div>
+      <div class="contact footer-div">
+        <hr class="footer-hr">
+        <h2>Contact Us: </h2>
+
+      </div>
     </section>
   </div>
+  <section id="popup">
+    <div class="register-image">
+      <img src="./assets/media/images/Register Img 1.png" alt="">
+    </div>
+    <div>
+      <h2>Register Your Self !</h2>
+      <form action="action.html" method="GET">
+        <fieldset id="personal">
+          <legend>&nbsp;Register Now !&nbsp;</legend>
+          <label for="name">Name: </label>
+          <input type="text" placeholder="Name" id="name" autofocus>
+
+          <label for="email">Email: </label>
+          <input type="text" placeholder="Email" id="email">
+
+          <label for="pnumber">Phone Number: </label>
+          <input type="text" placeholder="Phone Number" id="pnumber">
+
+          <label for="language">Programming Language: </label>
+          <input list="languages" placeholder="Choose One" id="language">
+          <datalist id="languages">
+            <option value="C"></option>
+            <option value="C++"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+            <option value="JavaScript"></option>
+          </datalist>
+        </fieldset>
+        <button type="submit" class="btn-a">Enroll!
+        </button>
+        <a href="#" onclick="toggle()" class="btn-a" title="Return to Home page">Close</a>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>

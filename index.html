@@ -68,7 +68,7 @@
       </div>
     </section>
     <section id="events">
-      <h2 class="secondary-heading">Upcoming<span class="primary">&nbsp;Events</span></h2>
+      <h2 class="secondary-heading">Upcoming <span class="primary">&nbsp;Events</span></h2>
       <div id="list-event">
 
       </div>
@@ -98,22 +98,22 @@
     <div class="register-image">
       <img src="./assets/media/images/Register Img 1.png" alt="">
     </div>
-    <div>
+    <div id="popup-form">
       <h2>Register Your Self !</h2>
-      <form action="action.html" method="GET">
+      <form action="/register-complete.html" method="GET">
         <fieldset id="personal">
-          <legend>&nbsp;Register Now !&nbsp;</legend>
+          <legend>&nbsp;Register Now !</legend>
           <label for="name">Name: </label>
-          <input type="text" placeholder="Name" id="name" autofocus>
+          <input type="text" placeholder="Name" id="name" required>
 
           <label for="email">Email: </label>
-          <input type="text" placeholder="Email" id="email">
+          <input type="text" placeholder="Email" id="email" required>
 
           <label for="pnumber">Phone Number: </label>
-          <input type="text" placeholder="Phone Number" id="pnumber">
+          <input type="text" placeholder="Phone Number" id="pnumber" required>
 
           <label for="language">Programming Language: </label>
-          <input list="languages" placeholder="Choose One" id="language">
+          <input list="languages" placeholder="Choose One" id="language" required>
           <datalist id="languages">
             <option value="C"></option>
             <option value="C++"></option>
@@ -124,7 +124,7 @@
         </fieldset>
         <button type="submit" class="btn-a">Enroll!
         </button>
-        <a href="#" onclick="toggle()" class="btn-a" title="Return to Home page">Close</a>
+        <a href="#" onclick="toggle()" class="btn-close" title="Return to Home page">Close</a>
       </form>
     </div>
   </section>

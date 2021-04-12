@@ -151,21 +151,38 @@ body {
   transition: 0.5s;
   overflow: hidden;
 }
+#popup-form {
+  width: 26%;
+}
+#personal {
+  margin: -23px 0 10px 0;
+}
 
 /* Utility Classes */
 .primary {
   color: var(--primary-color);
   font-family: var(--baloo-font);
 }
-.btn-a {
+.btn-a,
+.btn-close {
   font-weight: 900;
   font-size: 1em;
   font-family: var(--baloo-font);
   text-decoration: none;
   color: var(--black);
   margin: 1px 5px 0 0;
-  padding: 2px;
+  padding: 5px;
+  cursor: pointer;
 }
+
+.btn-a:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+.btn-close:hover {
+  color: gray;
+}
+
 h2 {
   margin: 2rem;
   display: flex;
@@ -200,4 +217,46 @@ fieldset {
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 10px;
+}
+
+/* Registration Completed Page */
+
+.register-complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-complete img {
+  width: 40rem;
+}
+
+#home {
+  position: fixed;
+  margin: 1rem 2rem;
+  top: 1rem;
+  right: 0;
+}
+#home a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+}
+#home a:hover {
+  color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  #home a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  #register-heading {
+    justify-content: flex-start;
+    font-size: 1.5rem;
+  }
+  .register-complete img {
+    width: 30rem;
+  }
 }

@@ -7,7 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <link rel="shortcut icon" href="./assets/media/images/logo.png" type="image/x-icon">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/media/svg/logo.svg" type="image/x-icon">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -21,12 +24,12 @@
   <title>Coding Club | Prestige Institute Of Engineering Management and Research, Indore</title>
 </head>
 
-<body>
+<body id="body">
   <div class="main-container" id="blur">
     <header id="top">
       <nav class="nav-bar">
         <div id="logo">
-          <a href="./index.html"><img src="./assets/media/images/logo.svg" alt="Coding Club"></a>
+          <a href="./index.html"><img src="./assets/media/svg/logo.svg" alt="Coding Club"></a>
         </div>
         <div id="links">
           <ul>
@@ -114,9 +117,9 @@
       </form>
     </div>
   </section>
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="logo-div">
-      <img src="../../assets/media/images/logo.svg" alt="Coding Club">
+      <img src="../../assets/media/svg/logo.svg" alt="Coding Club">
     </div>
     <div class="contact">
       <div id='visit'>
@@ -130,9 +133,25 @@
       </div>
     </div>
     <div class='social'>
-
+      <div class="newsletter">
+        <span>
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button type="submit" class='btn-a'>Subscribe</button>
+          </form>
+        </span>
+      </div>
+      <div class='top-footer'><a href='#top'><img src="./assets/media/svg/triangle.svg"></a></div>
     </div>
   </section>
+
+  <div id='copy-right'>
+    <span>&copy; 2021 by <a href="https://www.piemr.edu.in/" target="_blank">Prestige Institute Of Engineering
+        Management
+        and
+        Research, Indore</a></span>
+  </div>
 </body>
 
 </html>

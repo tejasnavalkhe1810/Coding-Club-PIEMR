@@ -114,6 +114,64 @@ label::selection {
   width: 10em;
 }
 
+/* About Us */
+#about .about-image {
+  width: 40em;
+  height: 30em;
+}
+#about {
+  display: none;
+  position: absolute;
+  height: 90vh;
+  padding: 10px;
+  box-shadow: 0 5px 30px var(--primary-color);
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#about .exit_button {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  cursor: pointer;
+}
+
+#about.active {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  top: 35px;
+  left: 35px;
+  right: 10px;
+  border-radius: 20px;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+#about #about-img {
+  align-self: flex-start;
+}
+#about #about-img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#about #about-text {
+  border-radius: 20px;
+  margin: 1%;
+  position: relative;
+  width: 55%;
+  align-self: flex-end;
+  padding: 1.5%;
+  box-shadow: 0px 0px 5px 3px var(--primary-color);
+}
+
+#about #about-text .about-para {
+  width: 80%;
+}
+
 /* Event sections */
 
 #list-event {
@@ -149,7 +207,6 @@ label::selection {
 #popup {
   display: none;
   position: absolute;
-  transition: translate(-50%, -50%);
   width: 95%;
   height: 90vh;
   padding: 10px;
